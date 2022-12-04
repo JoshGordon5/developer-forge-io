@@ -59,18 +59,25 @@
 >
 	<div class="flex flex-col-reverse items-start sm:flex-row">
 		<div class="flex flex-col pr-8 mb-16 ">
-			<h1 id="me" class="mb-3 text-3xl font-bold tracking-tight text-black dark:text-white md:text-5xl">
-				Shawn
+			<h1 class="mb-3 text-3xl font-bold tracking-tight text-black dark:text-white md:text-5xl">
+				This is
+
 				<span
-					class="relative ml-2 inline-block before:absolute before:-inset-1 before:block before:-skew-y-3 before:bg-red-500"
+					class="relative inline-block ml-2 before:absolute before:-inset-1 before:block before:-skew-y-3 before:bg-red-500"
 				>
-					<span class="relative skew-y-3 text-yellow-400">@swyx</span>
+					<span class="relative text-yellow-400 skew-y-3">{SITE_TITLE}</span>
 				</span>
-				Wang
+				!
 			</h1>
 			<h2 id="bio" class="mb-4 text-gray-700 dark:text-gray-200">
 			</h2>
-				<a  class="text-gray-600 dark:text-gray-400" sveltekit:prefetch href="/about">More on About page</a>
+			<h2 class="mb-4 text-gray-700 dark:text-gray-200">
+				Discover more about software development 
+				best practices and read opinion pieces on the software eco-system. <br><br>
+				In the navbar please find links to my projects and some other information
+				you may find useful and interesting. Below, you'll find some of my features blog posts but 
+				please follow the link at the top to find all of my blog pieces.<br>
+			</h2>
 		</div>
 		<img
 				class="w-[80px] rounded-full sm:w-[176px] relative mb-8 sm:mb-0 mr-auto bg-cyan-300 bg-opacity-25"

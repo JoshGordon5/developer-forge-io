@@ -71,86 +71,24 @@
 					>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero, ducimus.</span
 				>.
 			</p> -->
-
+			
 			<div id="revue-embed">
-				<form
-					class="relative my-4"
-					action="https://www.getrevue.co/profile/swyx/add_subscriber"
-					method="post"
-					id="revue-form"
-					name="revue-form"
-					target="_blank"
-				>
-					<div class="revue-form-group formkit-field sm:flex">
+					<form class="relative my-4" action="https://www.getrevue.co/profile/phoenixwebdev22/add_subscriber" method="post" id="revue-form" name="revue-form"  target="_blank">
 						<input
-							class="formkit-input mt-1 block 
-						w-full appearance-none 
-						rounded-lg
-						border-gray-300 bg-white px-4 py-2 pr-32 text-gray-900 
-						placeholder-gray-400 focus:border-blue-500 focus:ring-blue-500 dark:bg-gray-700 dark:text-gray-100"
-							aria-label="Email Address"
-							placeholder="your@email.com"
 							type="email"
-							name="member[email]"
-							id="member_email"
-						/>
-						<div class="revue-form-actions">
-							<input
-								type="submit"
-								on:click={toggleSubscribe}
-								class="absolute flex right-0 top-0 sm:hidden items-center justify-center rounded-r-lg bg-zinc-100 px-4 
-							py-2 font-medium text-gray-900 hover:text-gray-700 
-							dark:bg-zinc-700 dark:text-gray-100
-							hover:dark:text-yellow-200"
-								value={'Subscribe'}
-								name="member[subscribe]"
-								id="member_submit"
-							/>
-							<input
-								type="submit"
-								on:click={toggleSubscribe}
-								class="absolute hidden right-0 top-1 sm:flex items-center justify-center rounded-r-lg bg-zinc-100 px-4 
-							py-2 font-medium text-gray-900 hover:text-gray-700 
-							dark:bg-zinc-700 dark:text-gray-100
-							hover:dark:text-yellow-200"
-								value={isSubscribed ? 'Subscribe again why not' : 'Subscribe'}
-								name="member[subscribe]"
-								id="member_submit"
-							/>
-						</div>
-					</div>
-					<div class="revue-form-footer hidden">
-						By subscribing, you agree with Revue’s <a
-							target="_blank"
-							href="https://www.getrevue.co/terms">Terms of Service</a
+							aria-label="Email for newsletter"
+							placeholder="tim@apple.com"
+							autocomplete="email"
+							required={true}
+							class="mt-1 block w-full rounded-md border-gray-300 bg-white px-4 py-2 pr-32 text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:bg-gray-800 dark:text-gray-100"
+						/><button
+							class="absolute right-1 top-1 flex h-8 w-28 items-center justify-center rounded bg-gray-100 px-4 pt-1 font-medium text-gray-900 dark:bg-gray-700 dark:text-gray-100"
+							type="submit" value="Subscribe" name="member[subscribe]" id="member_submit" >Subscribe</button
 						>
-						and <a target="_blank" href="https://www.getrevue.co/privacy">Privacy Policy</a>.
-					</div>
-
-					<!-- <form class="relative my-4" action="https://www.getrevue.co/profile/swyx/add_subscriber" method="post" id="revue-form" name="revue-form"  target="_blank">
-					<div class="revue-form-group formkit-field sm:flex">
-
-					</div>
-				<input
-					type="email"
-					aria-label="Email Address"
-					name="member[email]" id="member_email"
-					placeholder="your@email.com"
-					autocomplete="email"
-					required={true}
-					class="px-4 py-2 mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full border-gray-300 rounded-md bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 pr-32"
-				/><button
-					class="flex items-center justify-center absolute right-1 top-1 px-4 pt-1 font-medium h-8 bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-gray-100 rounded w-28"
-					type="submit">Subscribe</button
-				>
-			</form>
-		-->
-				</form>
+					</form>
 			</div>
-			<p class="mt-2 text-sm text-gray-800 dark:text-gray-200">
-				3000+ subscribers including my Mom – <a href="https://www.getrevue.co/profile/swyx"
-					>see past issues</a
-				>
+			<p class="text-sm text-gray-800 dark:text-gray-200">
+				By subscribing, you agree with Revue’s <a target="_blank" href="https://www.getrevue.co/terms">Terms of Service</a> and <a target="_blank" href="https://www.getrevue.co/privacy">Privacy Policy</a>.
 			</p>
 		{/if}
 	</div>
